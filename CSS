@@ -1,0 +1,14 @@
+body {
+  font-family: var(--font-sans), 'Inter T...';
+  background: var(--paper);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'ss01', 'cv11';
+
+  /* أضيفي هذا للكشيدة */
+  text-align: justify;
+  text-justify: kashida;
+  -webkit-text-justify: kashida;
+  hanging-punctuation: none;
+}
