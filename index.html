@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>اختبار خط ثمانية</title>
+
+    <title>ثمانية</title>
 
     <style>
         @font-face {
@@ -13,37 +15,88 @@
             font-style: normal;
         }
 
-        body {
-            font-family: 'ThmanyahSerifDisplay', serif;
-            direction: rtl;
-
-            width: 60%;
-            margin: 60px auto;
-
-            font-size: 2.2em;
-            line-height: 1.9;
-
-            text-align: justify;
-            text-justify: inter-word;
-
-            font-feature-settings: "kern" 1;
-            text-rendering: optimizeLegibility;
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
         }
 
-        p {
-            margin: 0;
+        body{
+            font-family:'ThmanyahSerifDisplay', serif;
+
+            direction:rtl;
+            text-align:right;
+
+            background:#f7f7f7;
+            color:#111;
+
+            display:flex;
+            justify-content:center;
+
+            padding:80px 20px;
+        }
+
+        .article{
+            width:100%;
+            max-width:760px;
+        }
+
+        h1{
+            font-size:3rem;
+            line-height:1.5;
+
+            margin-bottom:40px;
+
+            font-weight:bold;
+        }
+
+        p{
+            font-size:2rem;
+            line-height:2.2;
+
+            margin-bottom:35px;
+
+            letter-spacing:0;
+        }
+
+        @media (max-width:768px){
+
+            h1{
+                font-size:2.2rem;
+            }
+
+            p{
+                font-size:1.5rem;
+                line-height:2;
+            }
+
         }
     </style>
 </head>
 
 <body>
 
-    <p>
-        هذا مثال طويل لاختبار الكشيدة العربية داخل المتصفح ومعرفة ما إذا كان
-        خط ثمانية يدعم التمدد الحقيقي للحروف العربية أثناء عملية المحاذاة الكاملة
-        للنصوص أم لا، لأن بعض المتصفحات تقوم فقط بتوسيع المسافات بدلًا من تنفيذ
-        الكشيدة العربية الفعلية حتى مع الخطوط الاحترافية.
-    </p>
+    <div class="article">
+
+        <h1>
+            لماذا تبدو بعض المواقع العربية أكثر فخامة وراحة للقراءة؟
+        </h1>
+
+        <p>
+            السر لا يكون دائمًا في الكشيدة العربية، بل في طريقة توزيع النص داخل
+            الصفحة، وعرض السطر، والمسافات، وحجم الخط، وراحة العين أثناء القراءة.
+            لهذا السبب تعتمد كثير من المواقع الاحترافية على محاذاة نظيفة بدل
+            إجبار المتصفح على تنفيذ كشيدة غير مستقرة.
+        </p>
+
+        <p>
+            عندما يكون عرض النص مناسبًا وتكون المسافات الرأسية مدروسة بعناية،
+            يظهر المحتوى بشكل أكثر هدوءًا وأناقة حتى بدون تمدد الحروف العربية
+            التقليدي الذي نراه في برامج التصميم والطباعة.
+        </p>
+
+    </div>
 
 </body>
+
 </html>
