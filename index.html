@@ -1,24 +1,49 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>اختبار خط ثمانية</title>
+
     <style>
         @font-face {
             font-family: 'ThmanyahSerifDisplay';
             src: url('thmanyahserifdisplay-Bold.woff2') format('woff2');
+            font-weight: bold;
+            font-style: normal;
         }
+
         body {
             font-family: 'ThmanyahSerifDisplay', serif;
-            text-align: center;
-            font-size: 2.5em;
-            padding-top: 50px;
+            direction: rtl;
+
+            width: 60%;
+            margin: 60px auto;
+
+            font-size: 2.2em;
+            line-height: 1.9;
+
+            text-align: justify;
+            text-justify: inter-word;
+
+            font-feature-settings: "kern" 1;
+            text-rendering: optimizeLegibility;
+        }
+
+        p {
+            margin: 0;
         }
     </style>
 </head>
+
 <body>
-    <h1>أهلاً بالعالم، هذا هو خط ثمانية.</h1>
-    <p>تم تحميل الخط بنجاح.</p>
+
+    <p>
+        هذا مثال طويل لاختبار الكشيدة العربية داخل المتصفح ومعرفة ما إذا كان
+        خط ثمانية يدعم التمدد الحقيقي للحروف العربية أثناء عملية المحاذاة الكاملة
+        للنصوص أم لا، لأن بعض المتصفحات تقوم فقط بتوسيع المسافات بدلًا من تنفيذ
+        الكشيدة العربية الفعلية حتى مع الخطوط الاحترافية.
+    </p>
+
 </body>
 </html>
